@@ -11,21 +11,37 @@ namespace WinFormsApp2
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection("Server=.;Database=Z36TodoAppDB;Trusted_Connection=true");
-
-            SqlCommand command = new SqlCommand();
-            command.Connection = connection;
+            SQLHelper helper = new SQLHelper();
 
             string uname = txtUsername.Text.Trim();
             string pass = txtPassword.Text.Trim();
 
             string query = "SELECT [Id] ,[Username] ,[Password] FROM [Users] WHERE Username = @uname AND Password = @pass";
 
-            command.CommandText = query;
-            command.Parameters.AddWithValue("@uname", uname);
-            command.Parameters.AddWithValue("@pass", pass);
+            //helper.command.CommandText = query;
+            //helper.command.Parameters.AddWithValue("@uname", uname);
+            //helper.command.Parameters.AddWithValue("@pass", pass);
 
-            connection.Open();
+
+
+            //List<MyParameter> parameters = new List<MyParameter>();
+            //parameters.Add(new MyParameter { ParameterName = "@uname", ParameterValue = uname });
+            //parameters.Add(new MyParameter { ParameterName = "@pass", ParameterValue = pass });
+
+            //helper.SetCommand(query, parameters);
+
+
+            //helper.SetCommand(query,
+            //    new MyParameter { ParameterName = "@uname", ParameterValue = uname },
+            //    new MyParameter { ParameterName = "@pass", ParameterValue = pass });
+
+
+            helper.SetCommand(query,
+                new MyParameter("@uname", uname),
+                new MyParameter("@pass", pass));
+
+
+            helper.connection.Open();
 
 
             // İlk satır ilk kolon değerini döndürür. Object olarak döner.. İçindeki değeri kullanacaksanız unboxing(cast) yapmalısınız.
@@ -43,7 +59,7 @@ namespace WinFormsApp2
 
 
 
-            SqlDataReader reader = command.ExecuteReader();
+            SqlDataReader reader = helper.command.ExecuteReader();
 
             bool isSuccess = false;
 
@@ -61,7 +77,7 @@ namespace WinFormsApp2
                 isSuccess = true;
             }
 
-            connection.Close();
+            helper.connection.Close();
 
             if (isSuccess)
             {

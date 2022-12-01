@@ -30,11 +30,11 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -64,23 +64,24 @@
             this.panel1.Size = new System.Drawing.Size(206, 112);
             this.panel1.TabIndex = 1;
             // 
-            // txtUsername
+            // btnLogin
             // 
-            this.txtUsername.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtUsername.Location = new System.Drawing.Point(10, 10);
-            this.txtUsername.MaxLength = 50;
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.PlaceholderText = "Kullanıcı Adınız";
-            this.txtUsername.Size = new System.Drawing.Size(186, 23);
-            this.txtUsername.TabIndex = 0;
+            this.btnLogin.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLogin.Location = new System.Drawing.Point(10, 76);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(186, 23);
+            this.btnLogin.TabIndex = 4;
+            this.btnLogin.Text = "Giriş";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // panel2
+            // panel3
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(10, 33);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(186, 10);
-            this.panel2.TabIndex = 1;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(10, 66);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(186, 10);
+            this.panel3.TabIndex = 3;
             // 
             // txtPassword
             // 
@@ -92,25 +93,26 @@
             this.txtPassword.PlaceholderText = "Şifreniz";
             this.txtPassword.Size = new System.Drawing.Size(186, 23);
             this.txtPassword.TabIndex = 2;
+            this.txtPassword.Text = "123";
             // 
-            // panel3
+            // panel2
             // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(10, 66);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(186, 10);
-            this.panel3.TabIndex = 3;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(10, 33);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(186, 10);
+            this.panel2.TabIndex = 1;
             // 
-            // btnLogin
+            // txtUsername
             // 
-            this.btnLogin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLogin.Location = new System.Drawing.Point(10, 76);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(186, 23);
-            this.btnLogin.TabIndex = 4;
-            this.btnLogin.Text = "Giriş";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.txtUsername.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtUsername.Location = new System.Drawing.Point(10, 10);
+            this.txtUsername.MaxLength = 50;
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.PlaceholderText = "Kullanıcı Adınız";
+            this.txtUsername.Size = new System.Drawing.Size(186, 23);
+            this.txtUsername.TabIndex = 0;
+            this.txtUsername.Text = "murat";
             // 
             // frmLogin
             // 
