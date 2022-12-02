@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp4", "WinFormsApp4\WinFormsApp4.csproj", "{0567A9CD-3AA2-4BA2-A293-6BAA93C74522}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z36.Helpers.AdoNet", "Z36.Helpers.AdoNet\Z36.Helpers.AdoNet.csproj", "{5BA64F8E-5A1F-4A5C-BB03-894130FBDB31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0567A9CD-3AA2-4BA2-A293-6BAA93C74522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0567A9CD-3AA2-4BA2-A293-6BAA93C74522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0567A9CD-3AA2-4BA2-A293-6BAA93C74522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0567A9CD-3AA2-4BA2-A293-6BAA93C74522}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BA64F8E-5A1F-4A5C-BB03-894130FBDB31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BA64F8E-5A1F-4A5C-BB03-894130FBDB31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BA64F8E-5A1F-4A5C-BB03-894130FBDB31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BA64F8E-5A1F-4A5C-BB03-894130FBDB31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2C22EBD-7098-4349-81A3-58D3650978DF}
+	EndGlobalSection
+EndGlobal
