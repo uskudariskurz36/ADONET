@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Z36.Helpers.AdoNet\Z36.Helpers.AdoNet.csproj" />
+    <PackageReference Include="Z36.Helpers.AdoNet" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
